@@ -6,7 +6,8 @@ aliases: ['/docs/tidb-in-kubernetes/stable/maintain-a-kubernetes-node/','/docs/t
 
 # Maintain Kubernetes Nodes that Hold the TiDB Cluster
 
-TiDB is a highly available database that can run smoothly when some of the database nodes go offline. For this reason, you can safely shut down and maintain the Kubernetes nodes at the bottom layer without influencing TiDB's service. Specifically, you need to adopt various maintenance strategies when handling nodes that hold PD, TiKV, and TiDB instances because of their different features.
+TiDB is a highly available database that can continue to function even if some database nodes go down. As a result, you may safely shut down and maintain the underlying Kubernetes nodes without affecting TiDB's service. You'll need to utilize distinct maintenance procedures when dealing with nodes that house PD, TiKV, and TiDB instances because of the differences in their functionality,
+
 
 This document introduces how to perform a temporary or long-term maintenance task for the Kubernetes nodes.
 
